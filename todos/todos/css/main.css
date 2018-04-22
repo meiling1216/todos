@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body {
+  min-width: 1280px;
+  font-family: "宋体";
+  color: #777;
+  font-size: 14px;
+  background: rgb(125,205,242) no-repeat center;
+}
+ul,ol{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+body table,body table>thead>tr>th,body table>tr>td{
+	font-family: "宋体";
+  text-align: center;
+  font-weight: normal;
+}
+.container{
+	/*width:80%;*/
+	margin-top:60px;
+}
+
+
+.box-left{
+	background:linear-gradient(#508bff,#815efe);
+	color: #fff;
+	text-align: center;
+	padding:30px 0 20px;
+
+}
+.box-left ul li{
+	line-height: 36px;
+}
+a{
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+.box-right{
+	background: #fff;
+	overflow: hidden;
+}
+.home{
+	margin: 20px;
+	left:20px;
+	top:20px;
+	height: calc(100% - 100px);
+	overflow: hidden;
+
+}
+ul li.act a{
+	color: red;
+	font-size: 28px;
+	text-align: 42px;
+}
+ul li a:hover{
+	color:rgb(232,63,72);
+	text-decoration: none;
+}
+p.date{
+	font-size: 24px;
+	color: #508bff;
+	margin-top:30px;
+
+}
+input.add{
+	/*margin-top:40px;*/
+	height: 40px;
+}
+input::-webkit-input-placeholder{
+	font-style:italic;
+}
+div.list{
+	height: 70%;
+	width: 100%;
+	overflow: scroll;
+}
+div.list ul li{
+	clear: both;
+	border-bottom: 1px solid #eee;
+	line-height: 50px;
+	height: 50px;
+	position: relative;
+	font-size: 18px;
+}
+input[type='checkbox']{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    background: none;
+    visibility: visible;
+    width:26px;
+}
+div.list ul li label{
+	background: url(../img/check.png) no-repeat left;
+	width:60%;
+	height: 20px;
+	line-height: 20px;
+	padding-left:30px;
+	position: absolute;
+	top:15px;
+	left:0;
+	font-style: normal;
+	color:#666;
+}
+div.list ul li input:checked +label{
+	background: url(../img/check2.png) no-repeat left;
+	color: #d9d9d9;
+	text-decoration: line-through;
+
+}
+div.list ul.pagination{
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+}
+div.list ul li span{
+	float: right;
+	color: rgba(241,156,173,0.6);
+}
+div.list ul li span:hover{
+	color: red;
+	cursor: pointer;
+}
+div.all{
+	position: absolute;
+	left: 36px;
+	bottom: 22px;
+}
+div.all input{
+	width: 0;
+}
+div.all label{
+	background: url(../img/check.png) no-repeat left;
+	padding-left:30px;
+	font-size: 18px;
+}
+div.all input:checked +label{
+	background: url(../img/check2.png) no-repeat left;
+}
+div.remove #remove{
+	background: rgba(241,156,173,0.6);
+	padding:6px 10px;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: 20px;
+	position: absolute;
+	bottom: 24px;
+	right:30px;
+	color: #fff;
+}
+div.remove #remove:hover{
+	background: red;
+}
+.item{
+	position: absolute;
+	bottom: 17px;
+	left: 42%;
+	font-size: 18px;
+}
+.item i{
+	font-size: 20px;
+	padding:0 6px;
+	color: red;
+}
+label{
+	color:#333;
+	font-style: normal;
+}
+
+
+

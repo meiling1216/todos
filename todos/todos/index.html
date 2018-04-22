@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todo</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+		<div class="container">	
+			<div class="col-md-3 col-sm-3 col-xs-3 box-left">
+				<img class="img" src="img/logo.png" alt="头像">
+		      <ul>
+		      	<li class="all"><a class="all" href="#all">My Days</a></li>
+		      	<li class="active"><a class="active" href="#active">Active</a></li>
+		      	<li class="compeleted"><a class="compeleted" href="#compeleted">Compeleted</a></li>
+		      </ul>
+	    </div>
+
+	    <div class="col-md-9 col-sm-9 col-xs-9  box-right" >
+	    	<div class="home">
+	    		<div class="topday"><p class="date"></p></div>
+	    		<input class="col-sm-12 form-control add" placeholder="What needs to be done?" type="text" name="">
+	    		<div class="list">
+	    			<ul></ul>
+	    		</div>
+	    		
+	    		<div class="haveVal">
+	    			<div class="all"><input id="allChoose" type="checkbox" name=""><label for="allChoose">全选</label></div>
+
+	    			<!-- 分页 -->
+	          <!-- <ul class="pagination">
+						  <li><a href="#">&laquo;</a></li>
+						  <li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+						  <li><a href="#">&raquo;</a></li>
+						</ul> -->
+
+						<!-- 计数 -->
+						<p class="item">共<i></i>条</p>
+		    		<!-- 删除所选项 -->
+						<div class="remove"><input id="remove" type="button" name="" value="删除选中项"></div>
+		    	</div>
+    		</div>
+			</div>
+		</div>
+  </body>
+</html>
